@@ -86,8 +86,8 @@
     <widget class="QPushButton" name="customerInfoButton">
      <property name="geometry">
       <rect>
-       <x>670</x>
-       <y>400</y>
+       <x>680</x>
+       <y>390</y>
        <width>101</width>
        <height>23</height>
       </rect>
@@ -103,7 +103,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>400</y>
+       <y>390</y>
        <width>81</width>
        <height>23</height>
       </rect>
@@ -118,7 +118,7 @@
     <widget class="QFrame" name="paymentFrame">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>440</x>
        <y>40</y>
        <width>251</width>
        <height>221</height>
@@ -238,7 +238,7 @@
     <widget class="QFrame" name="shipmentFrame">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>40</y>
        <width>271</width>
        <height>231</height>
@@ -505,7 +505,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>400</y>
+       <y>390</y>
        <width>91</width>
        <height>23</height>
       </rect>
@@ -521,7 +521,7 @@
      <property name="geometry">
       <rect>
        <x>690</x>
-       <y>400</y>
+       <y>390</y>
        <width>91</width>
        <height>23</height>
       </rect>
