@@ -1,0 +1,62 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/aboutSmall.png</file>
+        <file>images/bear.png</file>
+        <file>images/coin.png</file>
+        <file>images/corona.png</file>
+        <file>images/cry.png</file>
+        <file>images/gangsta.png</file>
+        <file>images/hearts.png</file>
+        <file>images/laught.png</file>
+        <file>images/logoSmall.png</file>
+        <file>images/smileSmall.png</file>
+    </qresource>
+    <qresource prefix="/01">
+        <file>images/01/apple.png</file>
+        <file>images/01/banana.png</file>
+        <file>images/01/cucumber.png</file>
+        <file>images/01/melon.png</file>
+        <file>images/01/peach.png</file>
+        <file>images/01/tomato.png</file>
+    </qresource>
+    <qresource prefix="/02">
+        <file>images/02/bok.png</file>
+        <file>images/02/jazyk.png</file>
+        <file>images/02/kotleta.png</file>
+        <file>images/02/kralik.png</file>
+        <file>images/02/krkovice.png</file>
+        <file>images/02/srdce.png</file>
+    </qresource>
+    <qresource prefix="/03">
+        <file>images/03/kofola.png</file>
+        <file>images/03/pepsi.png</file>
+        <file>images/03/rajec.png</file>
+        <file>images/03/relax.png</file>
+        <file>images/03/svijany.png</file>
+        <file>images/03/vodka.png</file>
+    </qresource>
+    <qresource prefix="/04">
+        <file>images/04/fazole.png</file>
+        <file>images/04/hrach.png</file>
+        <file>images/04/krupice.png</file>
+        <file>images/04/mouka.png</file>
+        <file>images/04/ryze.png</file>
+        <file>images/04/spaghet.png</file>
+    </qresource>
+    <qresource prefix="/05">
+        <file>images/05/brufen.png</file>
+        <file>images/05/gutalax.png</file>
+        <file>images/05/nasivin.png</file>
+        <file>images/05/paracentanol.png</file>
+        <file>images/05/plenky.png</file>
+        <file>images/05/proenzi.png</file>
+    </qresource>
+    <qresource prefix="/06">
+        <file>images/06/pirateBrown.png</file>
+        <file>images/06/simanek.png</file>
+        <file>images/06/simeros.png</file>
+        <file>images/06/simerro.png</file>
+        <file>images/06/simFaktor.png</file>
+        <file>images/06/simkanicek.png</file>
+    </qresource>
+</RCC>

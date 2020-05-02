@@ -1,11 +1,11 @@
-#include "stdafx.h"
-#include "simshopqt.h"
-#include <QtWidgets/QApplication>
+#include "simshop.h"
+
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
-	QApplication a(argc, argv);
-	SimShopQT w;
-	w.show();
-	return a.exec();
+    QApplication a(argc, argv);
+    SimShop w;
+    w.show();
+    return a.exec();
 }
