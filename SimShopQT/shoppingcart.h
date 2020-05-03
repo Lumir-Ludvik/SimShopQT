@@ -36,6 +36,7 @@ private slots:
 
 private:
     Ui::shoppingCart *ui;
+    void CountPrice();
 
 
 signals:

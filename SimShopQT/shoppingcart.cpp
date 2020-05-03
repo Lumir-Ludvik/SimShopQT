@@ -49,6 +49,7 @@ void shoppingCart::on_mainOrderButton_clicked()
 void shoppingCart::on_submitButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(3);
+    CountPrice();
 }
 
 void shoppingCart::FillShoppingCart()
@@ -84,4 +85,15 @@ void shoppingCart::SetCart(QString item)
     {
         Cart::cartVector.push_back(item);
     }
+}
+
+void shoppingCart::CountPrice()
+{
+    double price = 0;
+    for (uint i = 0; i < Cart::cartVector.size(); i++)
+    {
+        double itemPrice = Cart::cartVector[i].split(" ")[4].toDouble();
+        price += itemPrice;
+    }
+    ui->priceLabel->setText("Celkova cena: " + QString::number(price) + " SimCoin");
 }

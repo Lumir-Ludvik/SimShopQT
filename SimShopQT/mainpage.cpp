@@ -146,7 +146,7 @@ void mainPage::changeToSpecial()
     QLabel *priceLables[6] {ui->priceLabel, ui->priceLabel_2, ui->priceLabel_3, ui->priceLabel_4, ui->priceLabel_5, ui->priceLabel_6};
     QLabel *goodsPics[6] {ui->goodsPic, ui->goodsPic_2, ui->goodsPic_3, ui->goodsPic_4, ui->goodsPic_5, ui->goodsPic_6};
 
-    QString items[6] {"Simeros", "Simanek", "Pirate brown", "Sim Faktor", "Simkanicek", "SimFerro Rapper"};
+    QString items[6] {"Simeros", "Simanek", "Pirate brown", "Sim Faktor", "Simkanicek", "SimFerro"};
     QString prices[6] {"Cena: 69.69", "Cena: 22.5", "Cena: 130.99", "Cena: 120.99", "Cena: 16.5", "Cena: 34.99"};
     QString goods[6] {":/06/images/06/simeros.png", ":/06/images/06/simanek.png", ":/06/images/06/pirateBrown.png", ":/06/images/06/simFaktor.png", ":/06/images/06/simkanicek.png", ":/06/images/06/simerro.png"};
 
@@ -214,40 +214,40 @@ void mainPage::on_addToCartButton_clicked()
 
 void mainPage::on_addToCartButton_2_clicked()
 {
-    QString name = ui->itemLabel->text();
-    QString price = ui->priceLabel->text();
+    QString name = ui->itemLabel_2->text();
+    QString price = ui->priceLabel_2->text();
     QString item = name + " Kusu: 1 " + price;
     shoppingCart().SetCart(item);
 }
 
 void mainPage::on_addToCartButton_3_clicked()
 {
-    QString name = ui->itemLabel->text();
-    QString price = ui->priceLabel->text();
+    QString name = ui->itemLabel_3->text();
+    QString price = ui->priceLabel_3->text();
     QString item = name + " Kusu: 1 " + price;
     shoppingCart().SetCart(item);
 }
 
 void mainPage::on_addToCartButton_4_clicked()
 {
-    QString name = ui->itemLabel->text();
-    QString price = ui->priceLabel->text();
+    QString name = ui->itemLabel_4->text();
+    QString price = ui->priceLabel_4->text();
     QString item = name + " Kusu: 1 " + price;
     shoppingCart().SetCart(item);
 }
 
 void mainPage::on_addToCartButton_5_clicked()
 {
-    QString name = ui->itemLabel->text();
-    QString price = ui->priceLabel->text();
+    QString name = ui->itemLabel_5->text();
+    QString price = ui->priceLabel_5->text();
     QString item = name + " Kusu: 1 " + price;
     shoppingCart().SetCart(item);
 }
 
 void mainPage::on_addToCartButton_6_clicked()
 {
-    QString name = ui->itemLabel->text();
-    QString price = ui->priceLabel->text();
+    QString name = ui->itemLabel_6->text();
+    QString price = ui->priceLabel_6->text();
     QString item = name + " Kusu: 1 " + price;
     shoppingCart().SetCart(item);
 }
