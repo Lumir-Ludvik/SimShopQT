@@ -1,5 +1,6 @@
 #include "shoppingcart.h"
 #include "ui_shoppingcart.h"
+#include <QStringListModel>
 
 shoppingCart::shoppingCart(QWidget *parent) :
     QWidget(parent),
@@ -48,4 +49,39 @@ void shoppingCart::on_mainOrderButton_clicked()
 void shoppingCart::on_submitButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(3);
+}
+
+void shoppingCart::FillShoppingCart()
+{
+    QStringListModel *model = new QStringListModel(this);
+    QStringList list;
+    for (uint i = 0; i < Cart::cartVector.size(); i++)
+    {
+        list << Cart::cartVector[i];
+    }
+    model->setStringList(list);
+    ui->shoppingCartView->setModel(model);
+    ui->shoppingCartView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+}
+
+void shoppingCart::SetCart(QString item)
+{
+    std::vector<QString>::iterator it = std::find(Cart::cartVector.begin(), Cart::cartVector.end(), item);
+    if(it != Cart::cartVector.end())
+    {
+        int index = std::distance(Cart::cartVector.begin(), it);
+        QStringList itemSplit = item.split(" ");
+        int count = itemSplit[2].toInt();
+        double price = itemSplit[4].toDouble();
+        count++;
+        price *= count;
+        itemSplit.replace(2, QString::number(count));
+        itemSplit.replace(4, QString::number(price));
+        QString itemRestructured = itemSplit[0] + " " + itemSplit[1] + " " + itemSplit[2] + " " + itemSplit[3] + " " + itemSplit[4];
+        Cart::cartVector[index] = itemRestructured;
+    }
+    else
+    {
+        Cart::cartVector.push_back(item);
+    }
 }

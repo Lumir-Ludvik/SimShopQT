@@ -2,15 +2,7 @@
 #include <string.h>
 #include "mainpage.h"
 #include "ui_mainpage.h"
-
-enum Categorie {
-   fruit = 0,
-    meat,
-    durable,
-    drinks,
-    drugs,
-    special
-};
+#include "shoppingcart.h"
 
 mainPage::mainPage(QWidget *parent) :
     QWidget(parent),
@@ -23,7 +15,7 @@ mainPage::mainPage(QWidget *parent) :
     model->setStringList(list);
     ui->catListView->setModel(model);
     ui->catListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    connect(ui->catListView->selectionModel(),
+   connect(ui->catListView->selectionModel(),
           SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
           this, SLOT(handleSelectionChanged(QItemSelection)));
     ui->catLabel->setText("Ovove a zelenina");
@@ -161,6 +153,7 @@ void mainPage::changeToSpecial()
     for (int i = 0; i < 6; ++i) {
         itemLabels[i]->setText(items[i]);
         priceLables[i]->setText(prices[i]);
+
         QPixmap pixmap(goods[i]);
         int w = goodsPics[i]->width();
         int h = goodsPics[i]->height();
@@ -209,4 +202,52 @@ void mainPage::on_catListView_activated(const QModelIndex &index)
     }
         break;
     }
+}
+
+void mainPage::on_addToCartButton_clicked()
+{
+    QString name = ui->itemLabel->text();
+    QString price = ui->priceLabel->text();
+    QString item = name + " Kusu: 1 " + price;
+    shoppingCart().SetCart(item);
+}
+
+void mainPage::on_addToCartButton_2_clicked()
+{
+    QString name = ui->itemLabel->text();
+    QString price = ui->priceLabel->text();
+    QString item = name + " Kusu: 1 " + price;
+    shoppingCart().SetCart(item);
+}
+
+void mainPage::on_addToCartButton_3_clicked()
+{
+    QString name = ui->itemLabel->text();
+    QString price = ui->priceLabel->text();
+    QString item = name + " Kusu: 1 " + price;
+    shoppingCart().SetCart(item);
+}
+
+void mainPage::on_addToCartButton_4_clicked()
+{
+    QString name = ui->itemLabel->text();
+    QString price = ui->priceLabel->text();
+    QString item = name + " Kusu: 1 " + price;
+    shoppingCart().SetCart(item);
+}
+
+void mainPage::on_addToCartButton_5_clicked()
+{
+    QString name = ui->itemLabel->text();
+    QString price = ui->priceLabel->text();
+    QString item = name + " Kusu: 1 " + price;
+    shoppingCart().SetCart(item);
+}
+
+void mainPage::on_addToCartButton_6_clicked()
+{
+    QString name = ui->itemLabel->text();
+    QString price = ui->priceLabel->text();
+    QString item = name + " Kusu: 1 " + price;
+    shoppingCart().SetCart(item);
 }

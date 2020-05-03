@@ -33,9 +33,11 @@ void SimShop::on_simShopButton_clicked()
 void SimShop::on_shoppingCartButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(3);
+    shoppingCart.FillShoppingCart();
 }
 
 void SimShop::moveMain()
 {
     ui->stackedWidget->setCurrentIndex(2);
 }
+

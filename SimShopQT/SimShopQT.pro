@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     about.cpp \
+    cart.cpp \
     main.cpp \
     mainpage.cpp \
     shoppingcart.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
 
 HEADERS += \
     about.h \
+    cart.h \
     mainpage.h \
     shoppingcart.h \
     simshop.h

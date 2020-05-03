@@ -2,6 +2,7 @@
 #define SHOPPINGCART_H
 
 #include <QWidget>
+#include "cart.h"
 
 
 namespace Ui {
@@ -15,7 +16,8 @@ class shoppingCart : public QWidget
 public:
     explicit shoppingCart(QWidget *parent = nullptr);
     ~shoppingCart();
-
+    void SetCart(QString item);
+    void FillShoppingCart();
 
 private slots:
     void on_mainPageButton_clicked();
@@ -34,6 +36,7 @@ private slots:
 
 private:
     Ui::shoppingCart *ui;
+
 
 signals:
     void MainClicked();
