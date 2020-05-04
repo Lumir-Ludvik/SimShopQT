@@ -19,17 +19,17 @@ public:
 private slots:
     void on_catListView_activated(const QModelIndex &index);
 
-    void on_addToCartButton_clicked();
+    void on_addToCart_clicked();
 
-    void on_addToCartButton_2_clicked();
+    void on_addToCart_2_clicked();
 
-    void on_addToCartButton_3_clicked();
+    void on_addToCart_3_clicked();
 
-    void on_addToCartButton_4_clicked();
+    void on_addToCart_4_clicked();
 
-    void on_addToCartButton_5_clicked();
+    void on_addToCart_5_clicked();
 
-    void on_addToCartButton_6_clicked();
+    void on_addToCart_6_clicked();
 
 private:
     Ui::mainPage *ui;
